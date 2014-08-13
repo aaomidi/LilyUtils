@@ -194,16 +194,6 @@ public class LilyUtils extends JavaPlugin implements Listener
       }
 
     /**
-     * Gets the version of lilypad-connect.
-     */
-    public String getLilyPadVersion()
-      {
-        String version = Bukkit.getServer().getPluginManager().getPlugin("LilyPad-Connect").getDescription().getVersion();
-
-        return version;
-      }
-
-    /**
      * Listens for LilyPad Events
      */
     @SuppressWarnings("deprecation")
