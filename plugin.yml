@@ -1,0 +1,27 @@
+name: LilyUtils
+main: me.pvmac2194.lilyutils.LilyUtils
+version: 7
+depend: [LilyPad-Connect]
+commands:
+   server:
+     description: Send you to a requested server.
+     aliases: [connect, servers]
+   glist:
+     description: Send you to a requested server.
+     aliases: [online]
+   lilypad:
+     description: Displays the current lilypad proxy version.
+     aliases: [lily, lilyutils]
+   alert:
+     description: Sends a global broadcast across all servers defined on the network (with LilyUtils).
+     aliases: [gsay, gbroadcast]
+   lilyutilsreload:
+     description: Reloads the config.
+     aliases: [lureload]
+permissions:
+  lilyutils.alert:
+    description: Allows for sending global broadcasts (across all servers).
+  lilyutils.reload:
+    description: Reloads the config.
+  lilyutils.fullserver:
+    description: Allows players to connect to full servers (they must have some permission on that server to be able to connect such as essentials.joinfullserver).
