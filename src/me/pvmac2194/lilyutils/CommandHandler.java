@@ -14,18 +14,18 @@ public class CommandHandler implements Listener, CommandExecutor
   {
     Connect connect;
     LilyUtils plugin;
-    
+
     public CommandHandler(Connect connect, LilyUtils plugin)
-    {
-      this.connect = connect;
-      this.plugin = plugin;
-    }
-    
+      {
+        this.connect = connect;
+        this.plugin = plugin;
+      }
+
     public String colorString(String string)
       {
         return ChatColor.translateAlternateColorCodes('&', string);
       }
-    
+
     /**
      * Handles the commands of the plugin.
      */

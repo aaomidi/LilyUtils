@@ -1,5 +1,5 @@
 #Header for alert
-alertHeader: '&c[Alert] 
+alertHeader: '&c[Alert] '
 #Style for the current server in /server {CURRENTSERVER} is the current server
 currentserver: '&fYou are currently connected to: &6{CURRENTSERVER}'
 #Style for the server list in /server {SERVERLIST} is the list of servers

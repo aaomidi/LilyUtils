@@ -17,18 +17,18 @@ public class MessageListener implements Listener
   {
     Connect connect;
     LilyUtils plugin;
-    
+
     public MessageListener(Connect connect, LilyUtils plugin)
-    {
-      this.connect = connect;
-      this.plugin = plugin;
-    }
-    
+      {
+        this.connect = connect;
+        this.plugin = plugin;
+      }
+
     public String colorString(String string)
       {
         return ChatColor.translateAlternateColorCodes('&', string);
       }
-    
+
     @SuppressWarnings("deprecation")
     @EventListener
     public void onMessage(MessageEvent e)

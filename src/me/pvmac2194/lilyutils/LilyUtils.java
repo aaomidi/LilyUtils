@@ -52,6 +52,7 @@ public class LilyUtils extends JavaPlugin implements Listener
               }
           }, 20L, 20L);
       }
+
     /**
      * Sends a global message across all servers with a String param.
      */
@@ -196,4 +197,4 @@ public class LilyUtils extends JavaPlugin implements Listener
             // ignore
           }
       }
-}
+  }
