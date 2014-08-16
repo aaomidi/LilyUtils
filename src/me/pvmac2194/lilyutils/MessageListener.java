@@ -248,5 +248,4 @@ public class MessageListener implements Listener
               }
           }
       }
-
   }
