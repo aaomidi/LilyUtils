@@ -43,6 +43,7 @@ public class LilyUtils extends JavaPlugin implements Listener
         getCommand("alert").setExecutor(handler);
         getCommand("glist").setExecutor(handler);
         getCommand("lilypad").setExecutor(handler);
+        getCommand("lilyutilsreload").setExecutor(handler);
         getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable()
           {
             @Override
