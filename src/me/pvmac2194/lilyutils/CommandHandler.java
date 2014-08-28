@@ -63,6 +63,10 @@ public class CommandHandler implements Listener, CommandExecutor
               }
             else if (cmd.getName().equalsIgnoreCase("glist"))
               {
+                if(!sender.hasPermission("lilyutils.glist")){
+                  sender.sendMessage(ChatColor.RED + "You do not have permission to perform this command.");
+                  return false;
+                }
                 if (!(plugin.getConfig().getString("beforeglist").equals("none")))
                   {
                     sender.sendMessage(colorString(plugin.getConfig().getString("beforeglist")));
@@ -77,7 +81,7 @@ public class CommandHandler implements Listener, CommandExecutor
 
                 String version = plugin.getDescription().getVersion();
 
-                String output = "§2Lily§7Pad §fbuild " + lilyVersion + " by Coelho.\n§aLilyUtils build " + version + " by pvmac2194.";
+                String output = "Â§2LilyÂ§7Pad Â§fbuild " + lilyVersion + " by Coelho.\nÂ§aLilyUtils build " + version + " by pvmac2194.";
 
                 sender.sendMessage(output);
               }
