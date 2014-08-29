@@ -1,17 +1,16 @@
 package me.pvmac2194.lilyutils;
 
-import java.io.UnsupportedEncodingException;
-
 import lilypad.client.connect.api.Connect;
 import lilypad.client.connect.api.event.EventListener;
 import lilypad.client.connect.api.event.MessageEvent;
 import lilypad.client.connect.api.request.RequestException;
 import lilypad.client.connect.api.request.impl.MessageRequest;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
+
+import java.io.UnsupportedEncodingException;
 
 public class MessageListener implements Listener
   {
